@@ -1,0 +1,14 @@
+# Site info
+domain: www.singulardream.com
+title: Singular Dream
+author: Chris Cooper
+email: chris@quixotic-chris.com
+
+sass:
+    sass_dir: _sass
+    # Minification
+#    style: compressed # for minification
+
+exclude: 
+    - README.md
+    - Gemfile
