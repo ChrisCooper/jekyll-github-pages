@@ -1,6 +1,6 @@
 # Site info
-domain: www.jekyllstarter.com
-title: Jekyll Starter
+domain: www.chriscooperjekyllstarter.com
+title: Site GitHub Pages Jekyll Starter
 author: Chris Cooper
 email: chris@quixotic-chris.com
 
@@ -13,3 +13,6 @@ exclude:
     - README.md
     - Gemfile
     - Gemfile.lock
+    - jekyll-install.sh
+    - jekyll-serve.sh
+    - jekyll-update.sh
