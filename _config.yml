@@ -16,3 +16,4 @@ exclude:
     - jekyll-install.sh
     - jekyll-serve.sh
     - jekyll-update.sh
+    - guides.txt
