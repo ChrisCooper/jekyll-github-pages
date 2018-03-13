@@ -1,12 +1,12 @@
 FROM ubuntu:17.10
 
-MAINTAINER Chris Cooper
+LABEL Author="Chris Cooper"
 
 # -- Basic setup --
 
 RUN apt-get update
 
-RUN apt-get -y install build-essential zlib1g-dev libxml2-dev libxslt1-dev libssl-dev libreadline-dev
+RUN apt-get -y install build-essential patch zlib1g-dev libxml2-dev libxslt1-dev libssl-dev libreadline-dev zlib1g-dev liblzma-dev
 RUN apt-get -y install libyaml-dev libsqlite3-dev libcurl4-openssl-dev libffi-dev
 
 RUN apt-get -y install ruby-dev ruby
@@ -27,6 +27,9 @@ RUN gem install bundler
 VOLUME /site
 
 RUN bundle config --global path .gems
+
+# Make sure nokogiri gem can find lxml2
+RUN bundle config build.nokogiri -- --with-xml2-include=/usr/include/libxml2/ --use-system-libraries
 
 WORKDIR /site
 
