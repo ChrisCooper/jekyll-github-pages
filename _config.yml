@@ -1,8 +1,8 @@
 # Site info
-domain: www.chriscooperjekyllstarter.com
+domain: www.example.com
 title: Site GitHub Pages Jekyll Starter
-author: Chris Cooper
-email: chris@quixotic-chris.com
+author: Your Name
+email: your_email@email.com
 
 sass:
     sass_dir: _sass
